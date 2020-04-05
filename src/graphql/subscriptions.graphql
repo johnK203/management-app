@@ -1,0 +1,124 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    username
+    firstName
+    lastName
+    address
+    phone
+    email
+    image
+    dob
+    user_type
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    username
+    firstName
+    lastName
+    address
+    phone
+    email
+    image
+    dob
+    user_type
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    username
+    firstName
+    lastName
+    address
+    phone
+    email
+    image
+    dob
+    user_type
+  }
+}
+subscription OnCreatePilot {
+  onCreatePilot {
+    id
+    licenses
+    medical
+    type_ratings
+    currency
+    additional_currencies
+  }
+}
+subscription OnUpdatePilot {
+  onUpdatePilot {
+    id
+    licenses
+    medical
+    type_ratings
+    currency
+    additional_currencies
+  }
+}
+subscription OnDeletePilot {
+  onDeletePilot {
+    id
+    licenses
+    medical
+    type_ratings
+    currency
+    additional_currencies
+  }
+}
+subscription OnCreatePlane {
+  onCreatePlane {
+    id
+    owners
+  }
+}
+subscription OnUpdatePlane {
+  onUpdatePlane {
+    id
+    owners
+  }
+}
+subscription OnDeletePlane {
+  onDeletePlane {
+    id
+    owners
+  }
+}
+subscription OnCreateCompany {
+  onCreateCompany {
+    id
+    company_name
+    address
+    phone
+    email
+    website
+    planes
+  }
+}
+subscription OnUpdateCompany {
+  onUpdateCompany {
+    id
+    company_name
+    address
+    phone
+    email
+    website
+    planes
+  }
+}
+subscription OnDeleteCompany {
+  onDeleteCompany {
+    id
+    company_name
+    address
+    phone
+    email
+    website
+    planes
+  }
+}

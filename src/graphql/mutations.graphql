@@ -1,0 +1,160 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    username
+    firstName
+    lastName
+    address
+    phone
+    email
+    image
+    dob
+    user_type
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    username
+    firstName
+    lastName
+    address
+    phone
+    email
+    image
+    dob
+    user_type
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    username
+    firstName
+    lastName
+    address
+    phone
+    email
+    image
+    dob
+    user_type
+  }
+}
+mutation CreatePilot(
+  $input: CreatePilotInput!
+  $condition: ModelPilotConditionInput
+) {
+  createPilot(input: $input, condition: $condition) {
+    id
+    licenses
+    medical
+    type_ratings
+    currency
+    additional_currencies
+  }
+}
+mutation UpdatePilot(
+  $input: UpdatePilotInput!
+  $condition: ModelPilotConditionInput
+) {
+  updatePilot(input: $input, condition: $condition) {
+    id
+    licenses
+    medical
+    type_ratings
+    currency
+    additional_currencies
+  }
+}
+mutation DeletePilot(
+  $input: DeletePilotInput!
+  $condition: ModelPilotConditionInput
+) {
+  deletePilot(input: $input, condition: $condition) {
+    id
+    licenses
+    medical
+    type_ratings
+    currency
+    additional_currencies
+  }
+}
+mutation CreatePlane(
+  $input: CreatePlaneInput!
+  $condition: ModelPlaneConditionInput
+) {
+  createPlane(input: $input, condition: $condition) {
+    id
+    owners
+  }
+}
+mutation UpdatePlane(
+  $input: UpdatePlaneInput!
+  $condition: ModelPlaneConditionInput
+) {
+  updatePlane(input: $input, condition: $condition) {
+    id
+    owners
+  }
+}
+mutation DeletePlane(
+  $input: DeletePlaneInput!
+  $condition: ModelPlaneConditionInput
+) {
+  deletePlane(input: $input, condition: $condition) {
+    id
+    owners
+  }
+}
+mutation CreateCompany(
+  $input: CreateCompanyInput!
+  $condition: ModelCompanyConditionInput
+) {
+  createCompany(input: $input, condition: $condition) {
+    id
+    company_name
+    address
+    phone
+    email
+    website
+    planes
+  }
+}
+mutation UpdateCompany(
+  $input: UpdateCompanyInput!
+  $condition: ModelCompanyConditionInput
+) {
+  updateCompany(input: $input, condition: $condition) {
+    id
+    company_name
+    address
+    phone
+    email
+    website
+    planes
+  }
+}
+mutation DeleteCompany(
+  $input: DeleteCompanyInput!
+  $condition: ModelCompanyConditionInput
+) {
+  deleteCompany(input: $input, condition: $condition) {
+    id
+    company_name
+    address
+    phone
+    email
+    website
+    planes
+  }
+}

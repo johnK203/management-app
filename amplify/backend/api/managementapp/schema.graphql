@@ -1,0 +1,36 @@
+type User @model {
+  id: ID!
+  username: String!
+  firstName: String
+  lastName: String
+  address: String
+  phone: String
+  email: String
+  image: String
+  dob: AWSDate
+  user_type: String
+}
+
+type Pilot @model {
+  id: ID!
+  licenses: [String]
+  medical: String
+  type_ratings: [String]
+  currency: AWSDate
+  additional_currencies: [String]
+}
+
+type Plane @model {
+  id: ID!
+  owners: [String]
+}
+
+type Company @model {
+  id: ID!
+  company_name: String!
+  address: String
+  phone: String
+  email: String
+  website: String
+  planes: [String]
+}

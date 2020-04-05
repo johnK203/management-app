@@ -1,0 +1,111 @@
+# this is an auto generated file. This will be overwritten
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    username
+    firstName
+    lastName
+    address
+    phone
+    email
+    image
+    dob
+    user_type
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      username
+      firstName
+      lastName
+      address
+      phone
+      email
+      image
+      dob
+      user_type
+    }
+    nextToken
+  }
+}
+query GetPilot($id: ID!) {
+  getPilot(id: $id) {
+    id
+    licenses
+    medical
+    type_ratings
+    currency
+    additional_currencies
+  }
+}
+query ListPilots(
+  $filter: ModelPilotFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPilots(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      licenses
+      medical
+      type_ratings
+      currency
+      additional_currencies
+    }
+    nextToken
+  }
+}
+query GetPlane($id: ID!) {
+  getPlane(id: $id) {
+    id
+    owners
+  }
+}
+query ListPlanes(
+  $filter: ModelPlaneFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPlanes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      owners
+    }
+    nextToken
+  }
+}
+query GetCompany($id: ID!) {
+  getCompany(id: $id) {
+    id
+    company_name
+    address
+    phone
+    email
+    website
+    planes
+  }
+}
+query ListCompanys(
+  $filter: ModelCompanyFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCompanys(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      company_name
+      address
+      phone
+      email
+      website
+      planes
+    }
+    nextToken
+  }
+}
